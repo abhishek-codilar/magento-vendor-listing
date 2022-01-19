@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="Codilar_Vendor::main"
+             title="Vendor"
+             translate="title"
+             module="Codilar_Vendor"
+             sortOrder="50"
+             resource="Codilar_Vendor::main"
+        />
+        <add id="Codilar_Vendor::vendor"
+             title="vendor Management"
+             translate="title"
+             module="Codilar_Vendor"
+             sortOrder="50"
+             resource="Codilar_Vendor::vendor"
+             parent="Codilar_Vendor::main"
+        />
+        <add id="Codilar_Vendor::vendor_list"
+             title="View All vendors"
+             translate="title"
+             module="Codilar_Vendor"
+             sortOrder="50"
+             resource="Codilar_Vendor::vendor_list"
+             parent="Codilar_Vendor::vendor"
+             action="vendor/index/index"
+        />
+    </menu>
+</config>
